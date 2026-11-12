@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <div class="container"> 
+            <div class="card">
+                <h1>Personal Profile</h1>
+                <p>Please fill in your details below</p>
+                
+                <form action="ProfileServlet" method="POST">
+                    
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="Enter your full name" required>
+                    
+                    <label for="studentId">Student ID</label>
+                    <input type="text" id="studentId" name="studentId"
+                           placeholder="Example: 123456" required>
+                    
+                    <label for="program">Program</label>
+                    <input type="text" id="program" name="program"
+                           placeholder="Example: Bachelor of Information Technology" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Enter your email" required>
+                    
+                    <label for="hobbies">Hobbies</label>
+                    <input type="text" id="hobbies" name="hobbies"
+                           placeholder="Example: Gaming, Hiking">
+                    
+                    <label for="introduction">Self-Introduction</label>
+                    <textarea id="introduction" name="introduction" rows="5"
+                              placeholder="Tell us about yourself..."></textarea>
+                    
+                    <button type="Submit">Submit Profile</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
